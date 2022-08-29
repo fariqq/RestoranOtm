@@ -26,16 +26,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="section-1">
-        <img id="m1" class="svg1" src="svg.png" alt="">
-        <img id="m2" class="svg2" src="svg1.png" alt="">
-        <img id="m3" class="svg3" src="svg2.png" alt="">
-        <img id="cloud" class="cloud" src="cloud.png" alt="">
-        <img id="cloud2" class="cloud2" src="cloud2.png" alt="">
-        <div id="sun" class="sun"></div>
-        <div id="text" class="text">Faruk Göl</div>
+            <h1 class="line animeTyping">Merhaba, Benim adım Faruk.</h1>
     </section>
 
     <section class="section-2">
@@ -90,31 +87,6 @@
             <input type="hidden" name="_next" value="https://fariqq.github.io/fariqq/">
         </form>
     </div>
-
-    <script>
-        let sun = document.getElementById('sun');
-        let m1 = document.getElementById('m1');
-        let m2 = document.getElementById('m2');
-        let m3 = document.getElementById('m3');
-        let text = document.getElementById('text');
-        let cloud1 = document.getElementById('cloud');
-        let cloud2 = document.getElementById('cloud2');
-
-        window.addEventListener('scroll', function(){
-            let deger = window.scrollY;
-            sun.style.top = (deger * 1.1 )+ 50 +'px';
-            m1.style.top = deger * 0.1 +'px';
-            m2.style.top = deger * 0.6 +'px';
-            m3.style.top = deger * 0.90 +'px';
-            text.style.left = 'calc(51% - '+deger*1 +'px)';
-            text.style.top = 'calc(48% + '+deger*0.3 +'px)';
-            cloud1.style.top = 'calc(5% + '+deger*1.2 +'px)';
-            cloud2.style.top = 'calc(2% + '+deger*1.3 +'px)';
-            cloud1.style.zoom = (100+deger/10)+'%';
-            cloud2.style.zoom = (100+deger/10)+'%';
-            sun.style.zoom = (100+deger/50)+'%';
-        });
-    </script>
     <script>
         VanillaTilt.init(document.querySelectorAll(".myCard"),{
             max: 25,

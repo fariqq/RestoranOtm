@@ -3,53 +3,42 @@
     padding: 0;
 }
 .section-1{
-    background: "svg2.png";
-    background-color: #81CACF;
+    background-color: #1DB9C3;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 72px;
     position: relative;
+    margin:0 auto;
+    border-right: 2px solid rgba(0, 0, 0, 0.7);
+    text-align: center;
+    width: 16em;
+    white-space: nowrap;
     overflow: hidden;
 }
-.sun{
-    position: absolute;
-    z-index: 100;
-    width: 100px;
-    height: 100px;
-    background-color: #FFEA11;
-    top: 5%;
-    left: 65%;
-    border-radius: 50%;
-    box-shadow: 0px 0px 25px #FFEA11;
+.animeTyping{
+    animation: typewriter 4s steps(27) 1s 1 normal both,
+    blinkTextCursor 500ms steps(27) infinite normal;
 }
-.svg1{
-    position: absolute;
-    z-index: 400;
-    width: 1600px;
-    margin-top: 320px;
+@keyframes typewriter{
+    from{
+        width: 0;
+    }
+    to{
+        width: 16em;
+    }
 }
-.svg2{
-    position: absolute;
-    width: 1600px;
-    margin-top: 100px;
-    z-index: 300;
-}
-.svg3{
-    position: absolute;
-    width: 1600px;
-    z-index: 200;  
-}
-.cloud{
-    position: absolute; 
-    width: 40%;
-    left:10%;
-    top: 5%;
-    z-index: 120;
-}
-.cloud2{
-    position: absolute; 
-    width: 40%;
-    left: 57%;
-    top: 2%;
-    z-index: 220;
+@keyframes blinkTextCursor{
+    from{
+        border-right-color: black;
+    }
+    to{
+        border-right-color: transparent;
+    }
 }
 .section-2{
     padding: 75px 10% 80px 10%;
@@ -71,21 +60,8 @@
     font-family: 'Alumni Sans Pinstripe', sans-serif;
     font-size: 30px;
 }
-.text{
-    z-index: 350;
-    font-family: 'Rubik Iso', cursive;
-    font-size: 900%;
-    color: white;
-    text-shadow: 2px 2px black;
-    top:48%;
-    left: 51%;
-    transform: translateX(-50%);
-    position: absolute;
-    text-align: center;
-    letter-spacing: 2px;
-}
 .section-3{
-    background-color: #355764;
+    background-color: #7027A0;
     color:white;
     height: auto;
     padding: 100px 10%;
@@ -98,7 +74,7 @@
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-    background-color: #355764;
+    background-color: #7027A0;
 }
 .custom-shape-divider-top-1661171687 svg {
     position: relative;
@@ -152,7 +128,7 @@
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-    background-color: #355764;
+    background-color: #7027A0;
 }
 
 .custom-shape-divider-bottom-1661340584 svg {
@@ -163,10 +139,10 @@
 }
 
 .custom-shape-divider-bottom-1661340584 .shape-fill {
-    fill: #5A8F7B;
+    fill: #C32BAD;
 }
 .section-4{
-    background-color: #5A8F7B;
+    background-color: #C32BAD;
     color:white;
     height: auto;
     padding: 100px 10%;
