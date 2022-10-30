@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Pollos Hermanos</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-1">
+            <div class="myNav">
+                <div class="myNavLeft col-md-3">
+                    <img src="logo.png" class="logo" alt="">
+                </div>
+                <div class="myNavMid col-md-6">
+                    <div class="myNavItem act">Anasayfa</div>
+                    <div class="myNavItem">Menü</div>
+                    <a href="hakkimizda.html"><div class="myNavItem">Hakkımızda</div></a>
+                    <div class="myNavItem">İletişim</div>
+                </div>
+                <div class="myNavRight col-md-3">
+                    <div>
+                        <i class="fa-solid fa-user icons"></i>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-cart-shopping icons"></i>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-outline-warning ml-4 btnGirisYap px-4">Giriş Yap</button>
+                    </div>
+                </div>
+                <i id="menuToggle" onclick="openMenuToggle()" class="fa-solid fa-bars my-auto"></i>
+            </div>
+            <div class="resimIcerik text-center">
+                <div class="baslik">
+                    Los Pollos Hermanos
+                </div>
+                <div class="lead">
+                    "62 farklı baharattan oluşan lezzet"
+                </div>
+                <div>
+                    <button type="button" class="btn btn-outline-warning btnGirisYap mt-4 px-4">Sipariş Ver</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section-2">
+        <div class="aciklamaIcerik row">
+            <div class="col-md-4 aciklamaText">
+                <div class="tirnak">"</div>
+                <div>En  iyi  malzemeleri</div> tutku ve özenle, yavaşça pişirmekteyiz. Evet, eski teknikler ile halen en  iyisi 
+                <div id="AciklamaLph">Los Pollos Hermanos...</div>
+                yada boşver sadece tadına bak ve                                    
+                gör!
+            </div>
+            <div class="col-md-6 aciklamaResim">
+                <img src="abqburger.png" alt="">
+            </div>
+        </div>   
+        <div class="text-center">
+            <button type="button" class="btn btn-outline-danger btnGirisYap mt-4 px-4">Sepete Ekle</button>
+        </div> 
+    </section>
+
+    <section class="section-3">
+        <div class="sc3baslik text-center">
+        </div>
+        <div class="row specialUrunler">
+            <div class="col-md-5 specialUrun">
+                <img src="menu-board-left.png" alt="">
+            </div>
+            <div class="pb-4 col-md-5 specialUrun">
+                <img src="menu-board-right.png" alt="">
+            </div>
+            <div class="col-md-5 specialUrun">
+                <img src="abq-sandwich-menu.png" alt="">
+                <div class="overlay">
+                    <div class="specialUrunAciklama">"Baharatlarla süslenmiş ve üzeri tereyağlı ekmek ile örtülmüş lezzetli kızarmış tavuklu sandviç."</div>
+                    <button type="button" class="btn btn-danger btnGirisYap mt-4 px-4">Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="col-md-5 specialUrun">
+                <img src="pollos-tenders-menu.png" alt="">
+                <div class="overlay">Yakında</div>
+            </div>            
+            <div class="col-md-5 specialUrun">
+                <img src="Fring-Fries-menu.png" alt="">
+                <div class="overlay">Yakında</div>
+            </div>            
+            <div class="col-md-5 specialUrun">
+                <img src="slaw-goodman-menu.png" alt="">
+                <div class="overlay">Yakında</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-4">
+        <div class="iletisim row">
+            <div class="col-md-5">
+                <div class="iletisimAciklama mx-auto my-auto">
+                    <span id="textGF">Gus Fring</span><br> ile iletişime mi geçmek istiyorsunuz?<br>
+                    Bu pek mümkün görükmüyor ama <br>  
+                    yinede iletişime geçmeyi denemek için <span id="textKristal">meth...</span> pardon kristalden
+                    oluşan kartlarımızı doldurabilirsiniz! 
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div data-tilt data-tilt-glare class="kristalCard mx-auto">
+                    <img src="kirikcam.png" alt="">
+                    <form action="" method="" class="text-center">
+                        <input type="text" placeholder="Ad" class="inputText w-75 mt-5 mx-auto form-control"><br>
+                        <input type="text" placeholder="Soyad" class="inputText w-75 mx-auto form-control"><br>
+                        <input type="email" placeholder="E-mail" class="inputText w-75 mx-auto form-control"><br>
+                        <input type="submit" class="my-3 btn btn-outline-light" value="Devam Et">
+                    </form>
+                </div>
+            </div>
+    </div>
+        
+    </section>
+
+    <footer class="py-5">
+        <div class="social">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+        <div id="footerLPH" onmouseleave="setOriginalText()" onmouseenter="setText()" class="footerAciklama" data-hover="I won Skyler!">
+            Los Pollos Hermanos by FKM&#174;
+        </div>
+        <div class="pt-2 footerSartlar">
+            Terms And Contitions
+        </div>
+        <div class="footerSartlar">
+            Privacy Policy
+        </div>
+    </footer>
+
+    <script>
+        function setText(){
+            document.getElementById('footerLPH').innerHTML='"I won skyler!"';
+        }
+        function setOriginalText(){
+            document.getElementById('footerLPH').innerHTML='Los Pollos Hermanos by FKM&#174;';
+        }
+    </script>
+
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".kristalCard"),{
+            max: 25,
+            speed: 400,
+            glare:true,
+            "max-glare":1,
+        });
+    </script>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
