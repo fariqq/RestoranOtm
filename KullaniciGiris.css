@@ -17,21 +17,18 @@ a{
     background-color: black;
     position: fixed;
     width: 100%;
+    opacity: 1;
 }
 .myNavMid{
     display: flex;
     padding: 29px 0px;
     justify-content: center;
 }
-.col-md-3{
-    padding: 0!important;
-    margin: 0!important;
-}
 .myNavRight{
     display: flex;
     justify-content: right;
     align-items:  center;
-    padding: 29px 0px!important;
+    padding: 29px 0px;
 }
 .myNavLeft{
     display: flex;
@@ -63,7 +60,9 @@ a{
     cursor: pointer;
     padding: 0px 15px;
 }
-
+.aboutUs{
+    background-color: black;
+}
 #menuToggle{
     color: #f2f3f7;
     font-size: x-large;
@@ -94,8 +93,10 @@ a{
     white-space: nowrap;
 }
 .section-2{
-    height: 500px;
-    background-color: plum;
+    height: 700px;
+    margin-bottom: -100px;
+    padding-top: 300px;
+    background-image: url(arka6.png);
 }
 footer{
     background-color: black;
@@ -127,4 +128,48 @@ footer i:hover{
     font-family: 'Rajdhani', sans-serif;
     font-size: large;
     cursor: pointer;
+}
+.arkaplanResim{
+    height: 737px;
+
+}
+.arkaplanKullanici h1{
+
+    text-align: center;
+     
+    font-size: x-large;
+    
+}
+.baslik h1{
+    font-weight: bolder;
+    font-size: 10px;
+}
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio-item{
+    width: 25%;
+    height: 200px;
+    overflow: hidden;
+}
+.portfolio-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover ;
+}
+.arkaplanKullanici{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arkaplanKullanici #name{
+    border-radius: 19px!important;   
+}
+.arkaplanKullanici #password{
+    border-radius: 19px!important;   
+}
+.arkaplanKullanici #logın{
+    border-radius: 19px; padding-right:10px; padding-left:10px;
 }

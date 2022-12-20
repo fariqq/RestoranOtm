@@ -26,8 +26,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="pl.css">
 </head>
 <body>
+    <div id="preLoader" class="screen">
+        <div class="plLPH">Los Pollos Hermanos</div>
+        <span class="loader">
+            <span class="loader-inner"></span>
+        </span>
+    </div>
     <header>
         <div class="header-1">
             <div class="myNav">
@@ -42,13 +50,13 @@
                 </div>
                 <div class="myNavRight col-md-3">
                     <div>
-                        <i class="fa-solid fa-user icons"></i>
+                        <i class="fa-solid fa-globe icons"></i>
                     </div>
                     <div>
                         <i class="fa-solid fa-cart-shopping icons"></i>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-outline-warning ml-4 btnGirisYap px-4">Giriş Yap</button>
+                        <button type="button" class="btn btn-outline-warning ml-4 btnGirisYap px-4">Rezervasyon</button>
                     </div>
                 </div>
                 <i id="menuToggle" onclick="openMenuToggle()" class="fa-solid fa-bars my-auto"></i>
@@ -121,8 +129,8 @@
             <div class="col-md-5">
                 <div class="iletisimAciklama mx-auto my-auto">
                     <span id="textGF">Gus Fring</span><br> ile iletişime mi geçmek istiyorsunuz?<br>
-                    Bu pek mümkün görükmüyor ama <br>  
-                    yinede iletişime geçmeyi denemek için <span id="textKristal">meth...</span> pardon kristalden
+                    Bu pek mümkün görünmüyor <br>  
+                    yine de iletişime geçmeyi denemek için <span id="textKristal">meth...</span> pardon kristalden
                     oluşan kartlarımızı doldurabilirsiniz! 
                 </div>
             </div>
@@ -157,6 +165,13 @@
             Privacy Policy
         </div>
     </footer>
+
+    <script>
+        addEventListener('load', (event) => {
+            let preloader = document.getElementById("preLoader");
+            preloader.style.display = "none";
+        });
+    </script>
 
     <script>
         function setText(){

@@ -238,7 +238,7 @@ footer i:hover{
     cursor: pointer;
 }
 .section-4{
-    background-image:  linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url(arka7.png);
+    background-color: black;
     height: auto;
     padding: 50px 0;
 }
@@ -256,7 +256,7 @@ footer i:hover{
 .iletisimAciklama{
     width: 75%;
     height: 100%;
-    color: black;
+    color: white;
     font-size: xx-large;
     font-family: 'Rajdhani', sans-serif;
 }
@@ -294,6 +294,9 @@ footer i:hover{
     filter: blur(3px);
     font-weight: bolder;
     font-family: 'Dosis', sans-serif;
+}
+.inputText{
+    color: white!important;
 }
 .kristalCard input{
     background-color: transparent!important;
