@@ -15,7 +15,6 @@ a{
     align-items: flex-start;
     padding: 15px 7%;
     background-color: black;
-    position: fixed;
     width: 100%;
     opacity: 1;
 }
@@ -93,10 +92,11 @@ a{
     white-space: nowrap;
 }
 .section-2{
-    height: 700px;
-    margin-bottom: -100px;
-    padding-top: 300px;
-    background-image: url(arka6.png);
+    height: 500px;
+    background-image: url(arka5.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 footer{
     background-color: black;
@@ -133,12 +133,8 @@ footer i:hover{
     height: 737px;
 
 }
-.arkaplanKullanici h1{
-
-    text-align: center;
-     
+.arkaplanKullanici h1{     
     font-size: x-large;
-    
 }
 .baslik h1{
     font-weight: bolder;
@@ -159,7 +155,6 @@ footer i:hover{
     object-fit: cover ;
 }
 .arkaplanKullanici{
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,6 +165,13 @@ footer i:hover{
 .arkaplanKullanici #password{
     border-radius: 19px!important;   
 }
-.arkaplanKullanici #logın{
-    border-radius: 19px; padding-right:10px; padding-left:10px;
+#login{
+    padding: 0 25px;
+    border-radius: 15px;
+}
+.arkaplanKullanici{
+    padding: 30px 20px;
+    background-color: #6aace6;
+    border-radius: 15px;
+    box-shadow: 1px 1px 50px black;
 }
